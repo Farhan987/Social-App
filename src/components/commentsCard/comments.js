@@ -28,8 +28,12 @@ export default class CommentsCard extends Component {
           }}
         >
           <Thumbnail
-            source={require("../images/profile2.jpg")}
-            style={{ height: 60, width: 60, borderRadius: 100 }}
+            source={require("../../images/profile2.jpg")}
+            style={{
+              height: this.props.height ? this.props.height : 60,
+              width: this.props.width ? this.props.width : 60,
+              borderRadius: 100
+            }}
           />
         </View>
         <View
@@ -51,7 +55,9 @@ export default class CommentsCard extends Component {
             alignItems: "flex-start"
           }}
         >
-          <Text style={{ paddingTop: 13 }}>8hrs ago</Text>
+          <Text note style={{ paddingTop: 13 }}>
+            {this.props.time}
+          </Text>
         </View>
       </View>
     );

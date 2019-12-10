@@ -10,7 +10,7 @@ import {
   Right
 } from "native-base";
 import SecondNewsFeedCard from "../components/newsFeedCard/newsFeedCard2";
-import CommentsCard from "../commentsCard/comments";
+import CommentsCard from "../components/commentsCard/comments";
 
 let postImage1 = require("../images/image1.jpg");
 let postImage2 = require("../images/image2.jpg");
